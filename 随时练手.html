@@ -8,9 +8,14 @@
 </head>
 <body>
     <script>
-        var demo = "";
-        var num = Boolean(demo);
-        console.log(num);
+        function Person(name, height) {
+            this.name = name;
+            this.height = height;
+            this.say = function () {
+                console.log(this.say)
+            }
+        }
+        console.log(new Person('xiaowang', 180).name);
     </script>
 </body>
 </html>
